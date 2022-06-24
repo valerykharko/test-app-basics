@@ -1,0 +1,67 @@
+.container {
+  height: calc(100vh - 64px);
+  background-color: #f5f5f5;
+  padding: 100px 500px;
+
+  .users {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .userBlock {
+      flex: 0 1 49%;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      background: white;
+
+      .user {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+
+        img {
+          width: 150px;
+          height: 150px;
+        }
+
+        .userInfo {
+          margin-left: 15px;
+
+          strong {
+            font-size: 24px;
+          }
+
+          &__name {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            span {
+              margin: 4px 0 0 7px;
+              color: gray;
+              font-size: 16px;
+              font-weight: bold;
+            }
+          }
+
+          &__email {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            span {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .emptyList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
